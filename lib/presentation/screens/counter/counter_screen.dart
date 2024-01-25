@@ -11,13 +11,7 @@ class _CounterScreenState extends State<CounterScreen> {
   int clickCounter = 0;
 
   String textController() {
-    if (clickCounter == 0) {
-      return "Click";
-    } else if (clickCounter == 1) {
-      return "Click";
-    } else {
-      return "Clicks";
-    }
+    return (clickCounter == 1) ? "Click" : "Clicks";
   }
 
   @override
